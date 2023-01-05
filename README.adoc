@@ -13,7 +13,7 @@ This is an example Spring data jpa project using integration testing with test c
 This is an example how to use integration test in Spring data jpa project using test container with Oracle database.
 If your test couldn't be tested using in memory database approach because you are using some Oracle custom sql definition you could use test container to be able to create a real Oracle database that will be start/stop automatically inside your test class.
 
-* Add 3 test container dependencies in your pom.xml
+* Add 3 test container dependencies in your link:pom.xml[pom.xml]
 
 [source,xml]
 ----
@@ -46,7 +46,7 @@ If your test couldn't be tested using in memory database approach because you ar
 
 ----
 
-* Define your custom Oracle test profile (OracleTestProfileJPAConfig):
+* Define your custom Oracle test profile (OracleTestProfileJPAConfig) link:src/test/kotlin/com/example/kotlinmvc/OracleTestProfileJPAConfig.kt[OracleTestProfileJPAConfig.kt] :
 
 [source,java]
 ----
@@ -97,7 +97,7 @@ class OracleTestProfileJPAConfig {
 }
 ----
 
-* Add configuration properties to you application.properties inside test directory (used in OracleTestProfileJPAConfig )
+* Add configuration properties to you application.properties inside test directory (used in OracleTestProfileJPAConfig ) link:src/test/resources/application.properties[application.properties]
 
 [source,java]
 ----
@@ -106,9 +106,9 @@ hibernate.show_sql=true
 hibernate.hbm2ddl.auto=update
 ----
 
-* Create a test class using OracleTestProfileJpaConfig: this class will create docker container using Oracle Database
+* Create a test class using OracleTestProfileJpaConfig: this class will create docker container using Oracle Database link:src/test/kotlin/com/example/kotlinmvc/MessageServiceImplTest.kt[MessageServiceImplTest.kt]
 
-link:src/test/kotlin/com/example/kotlinmvc/MessageServiceImplTest.kt[MessageServiceImplTest.kt]
+
 
 
 [source,java]
