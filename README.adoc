@@ -46,7 +46,7 @@ If your test couldn't be tested using in memory database approach because you ar
 
 ----
 
-* Define your custom Oracle test profile (OracleTestProfileJPAConfig) link:src/test/kotlin/com/example/kotlinmvc/OracleTestProfileJPAConfig.kt[OracleTestProfileJPAConfig.kt] :
+* Define your custom Oracle test profile link:src/test/kotlin/com/example/kotlinmvc/OracleTestProfileJPAConfig.kt[OracleTestProfileJPAConfig.kt] :
 
 [source,java]
 ----
