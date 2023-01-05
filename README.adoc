@@ -46,7 +46,7 @@ If your test couldn't be tested using in memory database approach because you ar
 
 ----
 
-* Define your custom oracle test profile (OracleTestProfileJPAConfig):
+* Define your custom Oracle test profile (OracleTestProfileJPAConfig):
 
 [source,java]
 ----
