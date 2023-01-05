@@ -108,6 +108,9 @@ hibernate.hbm2ddl.auto=update
 
 * Create a test class using OracleTestProfileJpaConfig: this class will create docker container using Oracle Database
 
+link:src/test/kotlin/com/example/kotlinmvc/MessageServiceImplTest.kt[MessageServiceImplTest.kt]
+
+
 [source,java]
 ----
 @Testcontainers
